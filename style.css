@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(255, 245, 240);
+    color: rgb(60, 40, 40);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+
+header {
+    background-color: rgb(136, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Seletor por ID */
+#t1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+
+header img {
+    border-radius: 50%;
+}
+
+/* Legendas */
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Títulos das seções */
+h2 {
+    color: rgb(136, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 2px solid rgb(136, 0, 0);
+    padding-bottom: 5px;
+}
+
+/* Seletor por classe */
+.contato,
+.habilidades,
+.resumo,
+.ods,
+.experiencia,
+.formacao {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Seletor por atributo */
+a[target="_blank"] {
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    color: rgb(136, 0, 0);
+    text-decoration: none;
+}
+
+/* Pseudo-classe */
+a:hover {
+    color: rgb(220, 80, 120);
+    text-decoration: underline;
+}
+
+
+#resumo {
+    font-style: italic;
+}
+
+
+.ods {
+    text-align: center;
+}
+
+
+.experiencia h3 {
+    color: rgb(100, 60, 60);
+}
+
+
+.formacao h3 {
+    font-weight: bold;
+}
+
+
+footer {
+    text-align: center;
+    color: rgb(100, 70, 70);
+    font-style: oblique;
+}

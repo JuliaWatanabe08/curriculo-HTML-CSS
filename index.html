@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Julia</title>
+
+    <!-- Fonte externa do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="t1">Julia Watanabe Dias</h1>
+
+        <figure>
+            <img src="imagens/foto.jpg.jpg" alt="Foto de Julia" width="200" height="200">
+            <figcaption>Foto de Julia Watanabe</figcaption>
+        </figure>
+
+        <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="contato">
+            <h2>CONTATO</h2>
+
+            <ul>
+                <li>
+                    <strong>Telefone:</strong> (43) 98832-8543
+                </li>
+
+                <li>
+                    <img src="icones/mail_black.svg" alt="Ícone de e-mail" width="16" height="16">
+                    <strong>Email:</strong>
+                    <a href="mailto:juliadiaswatanabe@gmail.com">
+                        juliadiaswatanabe@gmail.com
+                    </a>
+                </li>
+
+                <li>
+                    <img src="icones/github.svg.svg" alt="Ícone do GitHub" width="16" height="16">
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/JuliaWatanabe08" target="_blank">
+                        github.com/JuliaWatanabe08
+                    </a>
+                </li>
+
+                <li>
+                    <img src="icones/linkedin.svg.svg" alt="Ícone do LinkedIn" width="16" height="16">
+                    <strong>LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/julia-watanabe-dias-44488b435/" target="_blank">
+                        linkedin.com/in/julia-watanabe-dias-44488b435/
+                    </a>
+                </li>
+
+                <li>
+                    <img src="icones/local.svg.svg" alt="Ícone de localização" width="16" height="16">
+                    <strong>Cidade:</strong> Cornélio Procópio - PR
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="habilidades">
+            <h2>HABILIDADES</h2>
+
+            <ul>
+                <li>Programação em C</li>
+                <li>Conhecimento inicial em Java</li>
+                <li>Resolução de problemas</li>
+                <li>Organização</li>
+                <li>Proatividade</li>
+                <li>Responsabilidade</li>
+                <li>Trabalho em equipe</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section class="resumo" id="resumo">
+            <h2>RESUMO</h2>
+
+            <p>
+                Estudante de Análise e Desenvolvimento de Sistemas, com perfil organizado,
+                responsável e comprometido com resultados. Busco uma oportunidade na área
+                de Tecnologia para iniciar minha trajetória profissional, contribuir com
+                a equipe e assumir novos desafios.
+            </p>
+        </section>
+
+        <hr>
+
+        <section class="ods">
+            <h2>ODS que pretendo contribuir</h2>
+
+            <figure>
+                <img src="imagens/ODS9.jpg.jpg"
+                    alt="ODS 9 - Indústria, Inovação e Infraestrutura"
+                    width="200"
+                    height="200">
+
+                <figcaption>
+                    ODS 9 - Indústria, Inovação e Infraestrutura
+                </figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section class="experiencia">
+            <h2>EXPERIÊNCIA/PROJETOS</h2>
+
+            <article>
+                <h3>Jogo de Palavras | Projeto Acadêmico</h3>
+
+                <p>
+                    <time datetime="2026">2026</time>
+                </p>
+
+                <ul>
+                    <li>
+                        Desenvolvimento de um jogo utilizando a linguagem C.
+                    </li>
+
+                    <li>
+                        Utilização de matriz 4x4 e estruturas de programação.
+                    </li>
+
+                    <li>
+                        Aplicação de lógica de programação para implementação
+                        das funcionalidades do jogo.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="formacao">
+            <h2>FORMAÇÃO</h2>
+
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+
+            <p>
+                <time datetime="2026">2026</time> - Em andamento
+            </p>
+
+            <p>
+                UTFPR - Universidade Tecnológica Federal do Paraná
+            </p>
+        </section>
+
+    </main>
+
+    <br>
+
+    <footer>
+        <p>Currículo de Julia Watanabe Dias</p>
+    </footer>
+
+    <hr>
+
+    <button onclick="document.getElementById('modalContato').showModal()">
+        Enviar informações de contato
+    </button>
+
+    <dialog id="modalContato">
+
+        <h2>Informações de contato</h2>
+
+        <form method="dialog">
+
+            <p>
+                <label for="nome">Nome Completo:</label>
+                <br>
+
+                <input type="text" id="nome" name="nome" required>
+            </p>
+
+            <p>
+                <label for="instagram">Link para o Instagram:</label>
+                <br>
+
+                <input type="url" id="instagram" name="instagram">
+            </p>
+
+            <p>
+                <label for="whatsapp">Número do WhatsApp:</label>
+                <br>
+
+                <input type="tel" id="whatsapp" name="whatsapp" required>
+            </p>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+            <button type="button"
+                onclick="document.getElementById('modalContato').close()">
+                Fechar
+            </button>
+
+        </form>
+
+    </dialog>
+
+</body>
+
+</html>
